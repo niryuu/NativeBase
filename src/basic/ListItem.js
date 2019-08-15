@@ -20,13 +20,7 @@ class ListItem extends Component {
       ? this.context.theme['@@shoutem.theme/themeStyle'].variables
       : variable;
 
-    if (
-      Platform.OS === 'ios' ||
-      Platform.OS === 'web' ||
-      variables.androidRipple === false ||
-      (!this.props.onPress && !this.props.onLongPress) ||
-      Platform.Version <= 21
-    ) {
+    if (true) {
       return (
         <TouchableHighlight
           onPress={this.props.onPress}
